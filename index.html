@@ -21,6 +21,7 @@
                     <div class="header__burger">
                         <span></span>
                     </div>
+<!--                    бурген - це кнопка!-->
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li class="header__list-item">
@@ -48,7 +49,10 @@
             <div class="container">
                 <div class="hero__content">
                     <h1 class="hero__content-h1 color-red">Our services</h1>
+                    <!--ми ж з тобою оговорили, що буде окремий клас для стилів заголовка
+                    нп треба робити такі штуки hero__content-h1, краще hero__title-->
                     <h6 class="hero__content-p color-light-grey">WE BUILD GREAT BUSINESS</h6>
+<!--                    це має бути звичайний параграф! hero__description буде більш доречно-->
                 </div>
             </div>
         </section>
@@ -58,6 +62,7 @@
             <div class="container">
                 <div class="intro__content">
                     <h3 class="head-accent intro__content-h3">WHAT WE DO</h3>
+<!--                    це звичайний параграф, воно не має ніякої логічної ваги-->
                     <p class="intro__content-p h3">Apparently we had reached a great height in the atmosphere,
                         for the sky was a dead black, and the stars had ceased to twinkle.
                     </p>
@@ -66,6 +71,10 @@
                             <h2 class="color-red intro-accent-h2">15+</h2>
                             <h3 class="intro-accent-h3">NOBEL PRIZES</h3>
                         </div>
+                       <!-- знову купа заголовків
+                        знову класи з цифрами, це все робиться одним класом intro__item
+                        а вирівняти можна за допомогою flex параметрів, типу justify-content. Ти маєш знати,
+                        як працює ця модель розтаування-->
                         <div class="intro__content-box-2">
                             <h2 class="color-violet intro-accent-h2">33</h2>
                             <h3 class="intro-accent-h3">NOBEL PRIZES</h3>
@@ -93,10 +102,14 @@
                         <div class="row">
                             <div class="services__item">
                                 <img class="services__item-img" src="./static/img/Icon.svg">
+<!--                                alt-->
                                 <h5 class="color-green services__item-h5">Webdesign</h5>
+<!--                                чому це заголовок 5 рівня, якщо заголовок секції другого-->
                                 <p class="color-grey services__item-p">Tincidunt lobortis feugiat vivamus at augue eget.
                                     Risus feugiat in ante metus dictum. Amet aliquam id diam maecenas.
                                 </p>
+                                <!--ще раз повторюю, назви елементів мають нести їх логіку, а не техніну складову.
+                                services__img, services__title, services__description і т.д.-->
                             </div>
                             <div class="services__item">
                                 <img class="services__item-img" src="./static/img/Icon (1).svg">
@@ -115,6 +128,7 @@
                                     sem et tortor consequat.</p>
                             </div>
                         </div>
+<!--                        ніяких row, я тобі казав, поки все робив через флекс, це все робить за декілька параметрів !!-->
                         <div class="row">
                             <div class="services__item">
                                 <img class="services__item-img" src="./static/img/Icon (3).svg">
@@ -150,7 +164,7 @@
         </section>
 
         <!-- Add information section -->
-        <section class="information">
+        <!--<section class="information">
             <div class="container">
                 <div class="information__content">
                     <h3 class="head-accent information__content-h3">WHAT WE DO</h3>
@@ -195,10 +209,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- Add Testimonials section -->
-        <section class="testimonials">
+        <!--<section class="testimonials">
             <div class="container">
                 <div class="testimonials__content">
                     <img src="./static/img/Ellipse.png" class="main__img">
@@ -212,10 +226,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- Add Newsletter section -->
-        <section class="newsletter">
+        <!--<section class="newsletter">
             <div class="container">
                 <div class="newsletter__content">
                     <h2 class="newsletter__content-h2">Subscribe to our newsletter</h2>
@@ -229,11 +243,11 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section>-->
     </main>
 
     <!-- Add Footer -->
-    <footer class="footer">
+    <!--<footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__top">
@@ -294,7 +308,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>-->
 
     <script src="./assets/scripts/main.js"></script>
 </body>
