@@ -168,11 +168,13 @@ h4,
 }
 
 .hero__title {
-    padding-top: 108px;
     height: 60px;
+    padding-top: 108px;
 }
 
 .hero__description {
+    font-size: 18px;
+    letter-spacing: 4px;
     padding-bottom: 108px;
 }
 
