@@ -40,29 +40,6 @@ h4,
     line-height: calc(37 / 18);
 }
 
-h5,
-.h5 {
-    font-size: 18px;
-    font-weight: 500px;
-    line-height: calc(27 / 18);
-}
-
-h6,
-.h6 {
-    font-size: 18px;
-    font-weight: 800;
-    line-height: calc(37 / 18);
-    letter-spacing: 4px;
-}
-
-p,
-.p {
-    /*категорично ні, базові стилі для параграфа задані на body*/
-    font-size: 18px;
-    font-weight: 800;
-    line-height: calc(29 / 18);
-}
-
 .color-light-grey {
     color: #F4F4ED;
 }
@@ -99,13 +76,13 @@ p,
     letter-spacing: 6px;
 }
 
-.intro-accent-h2 {
+.intro__item-title {
     font-weight: 900;
     font-size: 99px;
     line-height: calc(118 / 99);
 }
 
-.intro-accent-h3 {
+.intro__item-description {
     font-weight: 800;
     font-size: 13px;
     line-height: calc(26 / 13);
@@ -120,28 +97,24 @@ p,
     border: 0;
 }
 
-a {
-    /*ні, для цього зроби собі хелпер-клас для ресету стилів на єлементах*/
-    /*типу .reset-styles*/
+.reset-styles {
     text-decoration: none;
     color: #F4F4ED;
 }
 
 .container {
-    max-width: 80%; /* там э конкретні  розміри контейнера, не видумуй */
+    width: 100%;
+    max-width: 80%; /* не знайшов де написан */
     margin: 0 auto;
 }
+
 
 /* Header */
 .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 61px;
-    margin-bottom: 36px;
-    margin-left: 10px;
-    /*ти знаєш різницю між маржой і паддінгами? тут не доречно використовувати маржу, так я це зовні відступи!*/
-    /*навіщо там маржін-лефт?? все повиннот просто бути обмежене контейнером*/
+    padding-top: 60px;
 }
 
 .header__logo {
@@ -172,53 +145,14 @@ a {
 
 .header__burger {
     display: none;
+    border: 0;
+    background: none;
 }
 
 @media (max-width: 992px) {
 
-    .container {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .header__burger {
+    .header__burger{
         display: block;
-        position: relative;
-        width: 27px;
-        height: 12px;
-        margin-left: 950px;
-        margin-top: 30px;
-    }
-
-    .header__burger span {
-        content: '';
-        position: absolute;
-        background-color: #30233D;
-        width: 27px;
-        height: 2px;
-    }
-    /*
-    навіщо ці понти? іноку свг просто з макету дістань)
-    і навіо там абсолют??
-     */
-
-    .header__burger::before {
-        content: '';
-        position: absolute;
-        top: 5px;
-        background-color: #30233D;
-        width: 27px;
-        height: 2px;
-    }
-
-    .header__burger:after {
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 9px;
-        background-color: #30233D;
-        width: 18px;
-        height: 2px;
     }
 }
 
@@ -233,116 +167,98 @@ a {
     background: url('../../static/img/header__photo.png') no-repeat top center / contain;
 }
 
-.hero__content-h1 {
+.hero__title {
     padding-top: 108px;
     height: 60px;
 }
 
-.hero__content-p {
+.hero__description {
     padding-bottom: 108px;
 }
 
 
 /* Intro */
 .intro__content {
-    width: 1146px;
+    text-align: center;
+    padding-top: 80px;
 }
 
 .intro__content::before {
     content: '';
     position: absolute;
-    left: 70px;
+    left: 50px;
     z-index: -1;
-    top: 730px;
+    top: 770px;
     width: 1280px;
     height: 617px;
     background: url('../../static/img/Map.png');
 }
 
-.intro__content-h3 {
-    margin-top: 108px;
-    width: 13%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    margin-top: 108px;
-    /*дублюєш стилі, також треба притримуватись якоїсь єдиної моделі їх написання*/
-    /*не зручно читати коли воно все намішане. мається на увазі спочатку розміри, потім ззовнішні відступи*/
-}
-
-.intro__content-p {
-    margin: 0;
+.intro__description {
+    padding-top: 15px;
     width: 754px;
     margin: 0 auto;
-    text-align: center;
-    /*дублюєш стилі,*/
 }
 
 .intro__content-boxes {
     display: flex;
-    margin-top: 10px;
+    justify-content: space-between;
 }
 
-.intro__content-box-1,
-.intro__content-box-2,
-.intro__content-box-3 {
+.intro__item{
     width: 362px;
-    text-align: center;
 }
 
-.intro-accent-h3 {
-    margin-top: -80px;
+.intro__item-title{
+    padding-top: 100px;
+    margin: 0;
 }
+
 
 /* Services */
 .services__content {
-    margin-top: 170px;
-}
-
-.services-h2,
-.services-p,
-.services-h3 {
+    padding-top: 130px;
     text-align: center;
-    /*чому не задати всьому блоку?*/
 }
 
-.services-p {
+.services__item {
+    text-align: left;
+}
+
+.services-description {
     width: 558px;
-    /*height: 111px; о це дуже погано, а якщо тексту стане більше? чому ти вирішив що текст в дищайні, це робочий контент? все має бути респонсів*/
     margin: 0 auto;
-}
-
-.services-h2 {
-    margin: 0 auto;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(29 / 18);
 }
 
 .services__list {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.row {
+    width: 90%;
     display: flex;
-    /*чому не  дати цей стиль для services__list*/
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 100px;
 }
 
 .services__item {
     width: 320px;
-    height: 224px;
-    margin-bottom: 120px;
-    margin-right: 30px;
+    height: 225px;
+    padding-bottom: 55px;
+    padding-right: 40px;
 }
 
-.services__item-p{
+.services__item-description{
     width: 310px;
     height: 60px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(26 / 16);
 }
-.services__item-h5{
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 27px;
+.services__item-title{
+    font-weight: 500px;
+    font-size: 18px;
+    line-height: calc(27 / 18);
 }
 
 
@@ -358,7 +274,3 @@ a {
 
 
 
-
-.people__img{
-    width: 200px;
-}
