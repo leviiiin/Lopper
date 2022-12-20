@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,243 +9,312 @@
     <link rel="stylesheet" href="./assets/libs/normalize.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
+
 <body>
 
-<!-- Add header -->
-<header class="header" role="banner">
-    <div class="container">
-        <div class="header__content">
-            <a href="" class="header__logo">Lopperr</a>
-            <div class="header__nav">
-                <div class="header__burger">
-                    <span></span>
+    <!-- Add header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header__content">
+                <a href="" class="header__logo reset-styles">Lopper</a>
+                <div class="header__nav">
+                    <button class="header__burger"><img src="./static/img/icons/icon-burger.svg"></button>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__list-item">
+                                <a href="#" class="header__menu-link reset-styles" title="">Home</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="#" class="header__menu-link reset-styles" title="">Services</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="#" class="header__menu-link reset-styles" title="">Work</a>
+                            </li>
+                            <li class="header__list-item">
+                                <a href="#" class="header__menu-link reset-styles" title="">About</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__list-item">
-                            <a href="#" class="header__menu-link" title="">Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Add Hero secrion -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title color-red">Our services</h1>
+                    <p class="hero__description h4 color-light-grey">we build great business</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Intro section -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro__content">
+                    <h2 class="head-accent intro__title">what we do</h2>
+                    <p class="intro__description h3">Apparently we had reached a great height in the atmosphere, for the
+                        sky was a dead black, and the stars had ceased to twinkle.
+                    </p>
+                    <ul class="no-styles intro__list">
+                        <li class="intro__item">
+                            <p class="color-red intro__item-title">15+</p>
+                            <p class="intro__item-description">nobel prizes</p>
                         </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__menu-link" title="">Services</a>
+                        <li class="intro__item">
+                            <p class="color-violet intro__item-title">33</p>
+                            <p class="intro__item-description">nobel prizes</p>
                         </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__menu-link" title="">Work</a>
-                        </li>
-                        <li class="header__list-item">
-                            <a href="#" class="header__menu-link" title="">About</a>
+                        <li class="intro__item">
+                            <p class="color-green intro__item-title">12</p>
+                            <p class="intro__item-description">nobel prizes</p>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-</header>
+        </section>
 
-<main>
-    <section class="section hero">
-        <div class="container">
-            <div class="hero__content">
-                    <h1 class="header__photo-text_red">Our services</h1>
-                <p class="header__photo-text_white">WE BUILD GREAT BUSINESS</p>
-            </div>
-        </div>
-    </section>
-    <!-- Add Intro section -->
-    <section class="intro">
-        <div class="container">
-            <p class="head-accent">WHAT WE DO</p>
-            <p>Apparently we had reached a great height in the atmosphere,
-                for the sky was a dead black, and the stars had ceased to twinkle.
-            </p>
-            <div class="intro__box1">
-                <h1>15+</h1>
-                <h3>NOBEL PRIZES</h3>
-            </div>
-            <div class="intro__box2">
-                <h1>33</h1>
-                <h3>NOBEL PRIZES</h3>
-            </div>
-            <div class="intro__box3">
-                <h1>12</h1>
-                <h3>NOBEL PRIZES</h3>
-            </div>
-        </div>
-    </section>
-
-    <!-- Add Services section -->
-    <section class="services">
-        <div class="container">
-            <h2>WE ARE AMAZING</h2>
-            <h2>Our services</h2>
-            <p>Quam adipiscing vitae proin sagittis nisl
-                rhoncus mattis rhoncus urna. Quam elementum
-                pulvinar etiam non. Eu consequat.
-            </p>
-            <div class="services__list">
-                <div class="services__item">
-                    <img src="./static/img/Icon.svg">
-                    <h1 class="color-green">Webdesign</h1>
-                    <p>Tincidunt lobortis feugiat vivamus at augue eget.
-                        Risus feugiat in ante metus dictum. Amet aliquam id diam maecenas.
+        <!-- Add Services section -->
+        <section class="services">
+            <div class="container">
+                <div class="services__content">
+                    <p class="head-accent">we are amazing</p>
+                    <h2 class="services-title">Our services</h2>
+                    <p class="services-description">Quam adipiscing vitae proin sagittis nisl
+                        rhoncus mattis rhoncus urna. Quam elementum
+                        pulvinar etiam non. Eu consequat.
                     </p>
-                </div>
-                <div class="services__item">
-                    <img src="./static/img/Icon (1).svg">
-                    <h1 class="color-orange">Webdev</h1>
-                    <p>Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque.
-                        Eu feugiat pretium nibh ipsum consequat nisl vel pretium.
-                    </p>
-                </div>
-                <div class="services__item">
-                    <img src="./static/img/Icon (2).svg">
-                    <h1>Marketing</h1>
-                    <p>Eu augue ut lectus arcu bibendum at. Pellentesque nec nam aliquam sem et tortor consequat.</p>
-                </div>
-                <div class="services__item">
-                    <img src="./static/img/Icon (3).svg">
-                    <h1>Marketing</h1>
-                    <p>Id venenatis a condimentum vitae. Magna fermentum iaculis eu non diam phasellus vestibulum lorem.
-                        Tortor dignissim convallis aenean et.
-                    </p>
-                </div>
-                <div class="services__item">
-                    <img src="./static/img/Icon (4).svg">
-                    <h1>Webdesign</h1>
-                    <p>Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque.
-                        Malesuada fames ac turpis egestas sed.
-                    </p>
-                </div>
-                <div class="services__item">
-                    <img src="./static/img/Icon (5).svg">
-                    <h1>Webdev</h1>
-                    <p>Integer quis auctor elit sed vulputate mi. Semper auctor neque vitae tempus.
-                        Vulputate odio ut enim blandit volutpat maecenas volutpat.
-                    </p>
+                    <ul class="no-styles services__list">
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon1.svg">
+                            <h3 class="color-green services__item-title">Webdesign</h3>
+                            <p class="color-grey services__item-description">Tincidunt lobortis feugiat vivamus at augue
+                                eget.
+                                Risus feugiat in ante metus dictum. Amet aliquam id diam maecenas.
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon2.svg">
+                            <h3 class="color-red services__item-title">Webdev</h3>
+                            <p class="color-grey services__item-description">Eget nulla facilisi etiam dignissim
+                                diam quis
+                                enim lobortis
+                                scelerisque.
+                                Eu feugiat pretium nibh ipsum consequat nisl vel pretium.
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon3.svg">
+                            <h3 class="color-orange services__item-title">Marketing</h3>
+                            <p class="color-grey services__item-description">Eu augue ut lectus arcu bibendum at.
+                                Pellentesque
+                                nec nam aliquam
+                                sem et tortor consequat.</p>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon4.svg">
+                            <h3 class="color-orange services__item-title">Marketing</h3>
+                            <p class="color-grey services__item-description">Id venenatis a condimentum vitae. Magna
+                                fermentum
+                                iaculis eu non
+                                diam phasellus vestibulum lorem.
+                                Tortor dignissim convallis aenean et.
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon5.svg">
+                            <h3 class="color-green services__item-title">Webdesign</h3>
+                            <p class="color-grey services__item-description">Sollicitudin ac orci phasellus egestas
+                                tellus
+                                rutrum tellus
+                                pellentesque.
+                                Malesuada fames ac turpis egestas sed.
+                            </p>
+                        </li>
+                        <li class="services__item">
+                            <img class="services__item-img" src="./static/img/icons/services__item-icon6.svg">
+                            <h3 class="color-red services__item-title">Webdev</h3>
+                            <p class="color-grey services__item-description">Integer quis auctor elit sed vulputate
+                                mi. Semper
+                                auctor neque
+                                vitae tempus.
+                                Vulputate odio ut enim blandit volutpat maecenas volutpat.
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Add information section -->
-    <section class="information__section">
-        <h2>WHAT WE DO</h2>
-        <h1>What we do</h1>
-        <p>Upper prior hundred links approach reedy, was to the than and the ever
-            somehow surprised known for every by of there until road. </p>
-        <div class="information__section-boxes">
-            <div class="information__section-box1">
-                <div class="text__box-1">
-                    <h2>01</h2>
-                    <h1>Upper prior hundred links approach reedy</h1>
-                    <p>Upper prior hundred links approach reedy, was to the than
-                        and the ever somehow surprised known for every by of there until road. </p>
+        <!-- Add Information section -->
+        <section class="information">
+            <div class="container">
+                <div class="information__content">
+                    <p class="head-accent">what we do</p>
+                    <h2 class="information__content-title">What we do</h2>
+                    <p class="information__content-description">Upper prior hundred links approach reedy, was to the
+                        than and the
+                        ever
+                        somehow surprised known for every by of there until road. </p>
+                    <ul class="no-styles information__list">
+                        <li class="information__item">
+                            <div class="information__item-preview">
+                                <img class="information__item-img" src="./static/img/Photo.png">
+                            </div>
+                            <div class="information__item-text">
+                                <h3 class="information__item-title">Upper prior hundred links approach reedy</h3>
+                                <p class="color-grey information__item-description">Upper prior hundred links approach
+                                    reedy, was to the
+                                    than
+                                    and the ever somehow surprised known for every by of there until road.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="information__item">
+                            <div class="information__item-preview">
+                                <img class="information__item-img" src="./static/img/Photo_3.png">
+                            </div>
+                            <div class="information__item-text">
+                                <h3 class="information__item-title">Upper prior hundred links approach reedy</h3>
+                                <p class="color-grey information__item-description">Upper prior hundred links approach
+                                    reedy, was to the
+                                    than
+                                    and the ever somehow surprised known for every by of there until road.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="information__item">
+                            <div class="information__item-preview">
+                                <img class="information__item-img" src="./static/img/Photo_2.png">
+                            </div>
+                            <div class="information__item-text">
+                                <h3 class="information__item-title">Upper prior hundred links approach reedy</h3>
+                                <p class="color-grey information__item-description">Upper prior hundred links approach
+                                    reedy, was to the
+                                    than
+                                    and the ever somehow surprised known for every by of there until road.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <img src="./static/img/Photo.png">
             </div>
-            <div class="information__section-box2">
-                <img src="./static/img/Photo_3.png">
-                <div class="text__box-2">
-                    <h2>02</h2>
-                    <h1>Upper prior hundred links approach reedy</h1>
-                    <p>Upper prior hundred links approach reedy, was to the than
-                        and the ever somehow surprised known for every by of there until road. </p>
-                </div>
-            </div>
-            <div class="information__section-box3">
-                <div class="text__box-3">
-                    <h2>03</h2>
-                    <h1>Upper prior hundred links approach reedy</h1>
-                    <p>Upper prior hundred links approach reedy, was to the than
-                        and the ever somehow surprised known for every by of there until road. </p>
-                </div>
-                <img src="./static/img/Photo_2.png">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Add Testimonials section -->
-    <section class="testimonials__section">
-        <div class="testimonials__section-bg"></div>
-        <img src="./static/img/Ellipse.png" class="main__img">
-        <img src="./static/img/Faces.png" class="people__img">
-        <img src="./static/img/“.png" class="check-mark__img">
-        <p>Lectur arcu bibendum at varius. Adipiscing diam donec adipiscing tristique.</p>
-        <div class="quote-author">
-            <h2>Kerry Johnes&nbsp</h2>
-            <h3>- Some Company</h3>
-        </div>
-    </section>
-
-    <!-- Add Newsletter section -->
-    <section class="newsletter__section">
-        <h1>Subscribe to our newsletter</h1>
-        <h2>Cras pilvinar mattis nunc sed blandit.</h2>
-        <form class="email-form">
-            <input type="email" placeholder="ENTER EMAIL">
-            <button><p>SUBSCRIBE</p><img src="./static/img/Arrow.svg"></button>
-        </form>
-    </section>
-</main>
-
-<!-- Add Footer -->
-<footer class="footer">
-    <div class="footer-flex">
-        <div>
-            <h1 class="footer-logo">Lopper</h1>
-            <p class="footer-text">Eu augue ut lectus arcu bibendum at.</p>
-        </div>
-        <div class="footer-block">
-            <div class="footer-menu">
-                <h2>MENU</h2>
-                <hr class="footer-menu-line">
-                <div class="footer-menu__nav">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">News</a>
-                    <a href="">Gallery</a>
-                    <a href="">Contact</a>
-                </div>
-            </div>
-            <div class="footer-services">
-                <h2>SERVICES</h2>
-                <hr class="footer-services_line">
-                <div class="footer-services__nav">
-                    <a href="">Lorem</a>
-                    <a href="">Ipsum</a>
-                    <a href="">Dolor</a>
-                    <a href="">Sit Amet</a>
-                </div>
-            </div>
-            <div class="footer-contact">
-                <h2>CONTACT US</h2>
-                <hr class="footer-contact-line">
-                <div class="footer-contact__nav">
-                    <div class="contact-phone">
-                        <img src="./static/img/Vector.svg">
-                        <a href="mailto:igorlevin@gmail.com">igorlevin000@gmail.com</a>
-                    </div>
-                    <div class="contact-email">
-                        <img src="./static/img/Vector (1).svg"><a href="tel:+380684723058"> +380 - 684 - 723 - 058</a>
+        <!-- Add Testimonials section -->
+        <!-- <section class="testimonials">
+            <div class="container">
+                <div class="testimonials__content">
+                    <img src="./static/img/Ellipse.png" class="main__img">
+                    <img src="./static/img/Faces.png" class="people__img">
+                    <img src="./static/img/“.png" class="check-mark__img">
+                    <h4 class="testimonials__content-title">Lectur arcu bibendum at varius. Adipiscing diam donec
+                        adipiscing tristique.</h4>
+                    <div class="quote-author">
+                        <p class="color-red quote-author-title">Kerry Johnes&nbsp</p>
+                        <h2 class="quote-author-description">- Some Company</h2>
                     </div>
                 </div>
             </div>
-            <div class="footer-follow">
-                <h2>FOLLOW US</h2>
-                <hr class="footer-follow-line">
-                <div class="messenger">
-                    <a href=""><img src="./static/img/Vector (4).svg"></a>
-                    <a href=""><img src="./static/img/Vector (3).svg"></a>
-                    <a href=""><img src="./static/img/Vector (2).svg"></a>
-                    <a href=""><img src="./static/img/Vector (5).svg"></a>
-                    <a href=""><img src="./static/img/Vector (6).svg"></a>
+        </section> -->
+
+        <!-- Add Newsletter section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__content">
+                    <h2 class="newsletter__content-title">Subscribe to our newsletter</h2>
+                    <p class="color-grey newsletter__content-description">Cras pulvinar mattis nunc sed blandit.</p>
+                    <form class="email-form">
+                        <input class="email-form__input" type="email" placeholder="ENTER EMAIL">
+                        <button type="button" class="email-form__button">
+                            <span class="button-title color-red">subscribe <img class="icon-button" src="./static/img/icons/icon-button.svg"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Add Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__top">
+                    <div class="footer__group">
+                        <h3 class="footer__logo">Lopper</h3>
+                        <p class="footer__logo-title">Eu augue ut lectus arcu bibendum at.</p>
+                    </div>
+                    <div class="footer__group">
+                        <h5 class="footer__group-title">menu</h5>
+                        <hr class="footer__group-line">
+                        <nav class="footer__group-nav">
+                            <a href="" class="footer__group-link">Home</a>
+                            <a href="" class="footer__group-link">About</a>
+                            <a href="" class="footer__group-link">Services</a>
+                            <a href="" class="footer__group-link">News</a>
+                            <a href="" class="footer__group-link">Gallery</a>
+                            <a href="" class="footer__group-link">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="footer__group">
+                        <h5 class="footer__group-title">services</h5>
+                        <hr class="footer__group-line">
+                        <nav class="footer__group-nav">
+                            <a href="" class="footer__group-link">Lorem</a>
+                            <a href="" class="footer__group-link">Ipsum</a>
+                            <a href="" class="footer__group-link">Dolor</a>
+                            <a href="" class="footer__group-link">Georgia</a>
+                        </nav>
+                    </div>
+                    <div class="footer__group">
+                        <h5 class="footer__group-title">contact us</h5>
+                        <hr class="footer__group-line">
+                        <nav class="footer__group-nav">
+                            <a href="mailto:igorlevin000@gmail.com" class="link-with-email" title="">
+                                <img class="link-with-icon" src="./static/img/icons/icon-email.svg" alt="">
+                                <span class="link-with-icon__text">contact@lop.com</span>
+                            </a>
+                            <a href="tel:+380684723058" class="link-with-phone" title="">
+                                <img class="link-with-icon" src="./static/img/icons/icon-phone.svg" alt="">
+                                <span class="link-with-icon__text">856 - 693 - 456</span>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="footer__group">
+                        <h5 class="footer__group-title">follow us</h5>
+                        <hr class="footer__group-line">
+                        <nav class="footer__group-nav">
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a href="#" class="socials__link"><img src="./static/img/icons/icon-twitter.svg" alt="twitter"></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="" class="socials__link"><img src="./static/img/icons/icon-facebook.svg" alt="facebook"></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="" class="socials__link"><img src="./static/img/icons/icon-instagram.svg" alt="instagram"></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="" class="socials__link"><img src="./static/img/icons/icon-youtube.svg" alt="youtube"></a>
+                                </li>
+                                <li class="socials__item">
+                                    <a href="" class="socials__link"><img src="./static/img/icons/icon-mastodon.svg" alt="mastodon"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2019 Lopper by mariuszdaniel. All right reserved.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <p class="footer-text2">© 2019 Lopper by mariuszdaniel. All right reserved.</p>
-</footer>
+    </footer>
 
-<script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
+
 </html>
